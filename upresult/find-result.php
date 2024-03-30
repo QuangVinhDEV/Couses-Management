@@ -17,7 +17,7 @@ include('includes/config.php');?>
         <link rel="stylesheet" href="assets/css/main.css" media="screen" >
         <script src="assets/js/modernizr/modernizr.min.js"></script>
     </head>
-    <body class="" style="background-image: url(assets/images/back1.jpg);
+    <body class="" style="background-image: url(assets/images/smart-contract.webp);
       background-color: #ffffff;
       background-size: cover;
       height: 100%;
@@ -30,13 +30,13 @@ include('includes/config.php');?>
 
             <div class="login-bg-color">
                 <div class="row">
-                    <div class="col-md-4 col-md-offset-7">
-                        <div class="panel login-box" style="    background: #172541;">
+                    <div class="col-md-4 col-md-offset-3">
+                        <div class="panel login-box" style="    background: white;">
                             <div class="panel-heading">
                                 <div class="panel-title text-center">
                                     <a href="#">
-                    <img style="height: 70px" src="assets/images/footer-logo.png"></a>
-                                    <h3 class="text-white">School Result Management System</h3>
+                    <img style="height: 70px" src="assets/images/logo.jpg"></a>
+                                    <h2 class="text-black"">Courses Management System</h2>
                                 </div>
                             </div>
                             <div class="panel-body p-20">
@@ -45,11 +45,11 @@ include('includes/config.php');?>
 
                                 <form action="result.php" method="post" class="admin-login">
                                 	<div class="form-group">
-                                		<label for="rollid" class="control-label">Enter your Roll Id</label>
+                                		<label for="rollid" class="control-label" style="color:black">Enter your Roll Id</label>
                                         <input type="text" class="form-control" id="rollid" placeholder="Enter Your Roll Id" autocomplete="off" name="rollid">
                                 	</div>
                                <div class="form-group">
-                                                        <label for="default" class="control-label">Class</label>
+                                                        <label for="default" class="control-label" style="color:black">Class</label>
  <select name="class" class="form-control" id="default" required="required">
 <option value="">Select Class</option>
 <?php $sql = "SELECT * from tblclasses";
@@ -69,7 +69,7 @@ foreach($results as $result)
                                     <div class="form-group mt-20">
                                         <div class="">
                                       
-                                            <button type="submit" class="btn" style="color: #172541;">Search</button>
+                                            <button type="submit" class="btn btn-primary" style="color: #172541;">Search</button>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>

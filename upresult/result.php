@@ -18,7 +18,7 @@ include('includes/config.php');
         <link rel="stylesheet" href="css/main.css" media="screen" >
         <script src="js/modernizr/modernizr.min.js"></script>
     </head>
-    <body>
+    <body style="background-image: url(assets/images/smart-contract.webp); color:aliceblue">
         <div class="main-wrapper">
             <div class="content-wrapper">
                 <div class="content-container">
@@ -50,7 +50,7 @@ include('includes/config.php');
                                         <div class="panel">
                                             <div class="panel-heading">
                                                 <div class="panel-title">
-                                                    <h3 align="center">Student Result Details</h3>
+                                                    <h3 align="center">Employee Result Details</h3>
                                                     <hr />
 <?php
 // code Student Data
@@ -69,9 +69,9 @@ if($stmt->rowCount() > 0)
 {
 foreach($resultss as $row)
 {   ?>
-<p><b>Student Name :</b> <?php echo htmlentities($row->StudentName);?></p>
-<p><b>Student Roll Id :</b> <?php echo htmlentities($row->RollId);?>
-<p><b>Student Class:</b> <?php echo htmlentities($row->ClassName);?>(<?php echo htmlentities($row->Section);?>)
+<p><b>Employee Name :</b> <?php echo htmlentities($row->StudentName);?></p>
+<p><b>Employee Roll Id :</b> <?php echo htmlentities($row->RollId);?>
+<p><b>Employee Class:</b> <?php echo htmlentities($row->ClassName);?>(<?php echo htmlentities($row->Section);?>)
 <?php }
 
     ?>
@@ -88,7 +88,7 @@ foreach($resultss as $row)
                                                 <thead>
                                                         <tr style="text-align: center">
                                                             <th style="text-align: center">#</th>
-                                                            <th style="text-align: center"> Subject</th>    
+                                                            <th style="text-align: center"> Course</th>    
                                                             <th style="text-align: center">Marks</th>
                                                         </tr>
                                                </thead>
@@ -168,7 +168,7 @@ echo htmlentities("Invalid Roll Id");
                                     <div class="form-group">
                                                            
                                                             <div class="col-sm-6">
-                                                               <a href="index.php">Back to Home</a>
+                                                              <button class="btn btn-primary"><a href="index.php" style="text-decoration: none">Back to Home</a></button> 
                                                             </div>
                                                         </div>
 
