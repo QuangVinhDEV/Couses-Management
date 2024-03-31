@@ -45,7 +45,7 @@ include('includes/config.php');?>
 
                                 <form action="result.php" method="post" class="admin-login">
                                 	<div class="form-group">
-                                		<label for="rollid" class="control-label" style="color:black">Enter your Roll Id</label>
+                                		<label for="rollid" class="control-label" style="color:black">Enter ID</label>
                                         <input type="text" class="form-control" id="rollid" placeholder="Enter Your Roll Id" autocomplete="off" name="rollid">
                                 	</div>
                                <div class="form-group">
